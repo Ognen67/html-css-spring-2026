@@ -1,37 +1,159 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - 2</title>
-  </head>
-  <body>
-    <h1>HTML 2</h1>
 
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Industry</th>
-          <th>Website</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Exxon Mobil</td>
-          <td>2</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Samsung Electronics</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>EXOR Group</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML - 2</title>
+</head>
+
+<body>
+  <h1>HTML 2</h1>
+
+  <table border="1" style="width: 100%;">
+    <tr>
+      <th colspan="3">Evropa</th>
+      <th colspan="3">Azija</th>
+      <th colspan="3">Afrika</th>
+    </tr>
+    <tr>
+      <td>Makedonija</td>
+      <td>Srbija</td>
+      <td>Bugarija</td>
+      <td>Kina</td>
+      <td>Mongolija</td>
+      <td>Vietnam</td>
+      <td>Egipet</td>
+      <td>Moroko</td>
+      <td>Liberija</td>
+
+    </tr>
+  </table>
+
+
+  <hr>
+
+
+  <!-- colspan, rowspan -->
+  <table border>
+    <tr>
+      <td colspan="2">1-1</td>
+      <td>1-2</td>
+      <td>1-3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2-1</td>
+      <td colspan="2">2-2</td>
+      <td>2-3</td>
+    </tr>
+    <tr>
+      <td>3-1</td>
+      <td>3-2</td>
+      <td>3-3</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table border="">
+    <tr>
+      <td colspan="2">1-1</td>
+      <td>1-3</td>
+    </tr>
+    <tr>
+      <td>2-1</td>
+      <td>2-2</td>
+      <td rowspan="2">2-3</td>
+    </tr>
+    <tr>
+      <td>3-1</td>
+      <td>3-2</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table border="1">
+    <tr>
+      <td colspan="2">1-1</td>
+      <td colspan="2" rowspan="2">1-3</td>
+      <td colspan="2" rowspan="2">1-5</td>
+    </tr>
+    <tr>
+      <td colspan="2">2-1</td>
+    <tr>
+      <td colspan="4">3-1</td>
+      <td rowspan="2">3-5</td>
+      <td>3-6</td>
+    </tr>
+    <tr>
+      <td colspan="4" rowspan="2">4-1</td>
+      <td>4-6</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2">5-5</td>
+    </tr>
+    <tr>
+      <td>6-1</td>
+      <td>6-2</td>
+      <td>6-3</td>
+      <td>6-4</td>
+    </tr>
+  </table>
+
+  <table border="1" style="width: 100%;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Logo</th>
+        <th>Industry</th>
+        <th>Website</th>
+        <th>Contact Email</th>
+        <th>Contact Number</th>
+        <th>Company Size</th>
+        <th>Opportinities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Exxon Mobil</td>
+        <td> <img src="https://logos-world.net/wp-content/uploads/2023/02/ExxonMobil-Logo.png" width="80"
+            alt="Exxon Mobil Logo">
+        </td>
+        <td>Mobile</td>
+        <td> <a href="https://exxonmobil.com" target="_blank">exxonmobil.com</a> </td>
+        <td> <a href="mailto:contact@exxonmobil.com">contact@exxonmobil.com</a></td>
+        <td> <a href="tel:+389843912">+389843912</a></td>
+        <td>100-200</td>
+        <td>Lorem ipsum dolor, sit amet.</td>
+      </tr>
+      <tr>
+        <td>Samsung Electronics</td>
+        <td> <img
+            src="data:image/jpeg;base64,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"
+            width="80" alt="Exxon Mobil Logo">
+        </td>
+        <td>Mobile</td>
+        <td> <a href="https://samsung.com" target="_blank">samsung.com</a> </td>
+        <td> <a href="mailto:contact@samsung.com">contact@samsung.com</a></td>
+        <td> <a href="tel:+389843912">+389843912</a></td>
+        <td>200-300</td>
+        <td>Lorem ipsum dolor, sit amet.</td>
+      </tr>
+      <tr>
+        <td>EXOR Group</td>
+        <td> <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEUAL2z///////4ALWsAI2cAJ2gAHWQAKmkAH2WkrcA/V4QAD2AAFGFfb5N/i6fk5+wAC1/x8vSXobcGM28AAF0hQngAGmPq7fG3vswAEWAABV4AF2JSZY32+PkVOXJYapDL0NpoeJnY3OPGzNdygJ80TX29w9B3haKstMVFWoYqRnmNmLCEkazBx9QdPHPb3+YAAFDSkLjFAAAI2klEQVR4nO2biXabOhCGkcXmgHcC3vC+xk583//prgRoQRDXady4485/TnscLaAPidHMyLbIs8t69AD+uJAQvpAQvpAQviQh9egzyaP/IiG1nkkUCcELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeELCeHrNkLvS/q7ntBNhLOXr+j4+lch3kLoTMmX1PQfgvKJbiRsfEGkD5GwkM5hCjIhtV5zWRrGeVYUvm2nrXZzkUpGgISW+FV0oBG2fVHqeY7th93je8EIkVC0DXVC26h1gmNKnprQsuxZNotPTGjZ82cntMYL8uSE2c751ITWOCFPTugenp3QWT47IbWendAKeuR+hPSGYNxz/NArPttxGE58r9zgLoQOu3DxMVxJQmrXKe9gFDrVe9lxMLJm1iiI7aoXGWYaBd2xvd00Ly8civrufrhaLfqvk3LjOxA6rctqUVw2fhfxIf04t6s6e1kHo3RjIHoTZ79LstEku709KU8LHTCQ1Wp16eRNCCf0gr4AaHbvTWjvCUnFVQez2SAf5QupE2eZLIzCzqh0o8nbrlQ9LE8LnamqbCyM0PlIiIhuyCG8N+GZkJ58bqK7IGyoPly822StarJPF53QiQ+8js9fNkn802GizTIdkNKlGaGz5a1SIgvuS+g2dUIhRpi3VID8Hx9pvOaFaVHG/r9oD91/6WUN36dhN+hO5uusX2+rma/Bbsi1lkD2Bx94ay8n0b0vIZ+SKiF7M5i6USJu24u6rCB/JuzDuM1mJ7V5WRCrXvEyfxLzrsPHQZ1xKy9oaaOOuYK5JGSuFOnNondRsNKe2D0II1JLmMvZysW0HpvlZGruOf4yj8COasrcLE3EEI1NyGkJoDe2rNOBM1mIgk5wV0J7wybjU0Jr0peIG22MIfdgm6HR2DkWIaZuWsJmjrgtW1xFyCaTPytf3IkstO7fJ/QmvauEtNsRN26oSwdD1ukyNm5FncxYkLRsO+McO/VLzRVhh5lbNmvUE9arpdul7xL67iWzBJ8SWp5ap4uoKLNb3ETODPfD6ubGgxziUjEzrlnxLtBLJSF7dMTigxZJwZP+gH6bcB87ju2O3Hb+1K8QWrFap21X3rVBlqZ35xS2gxy9+vKpvk4VYYMMcyb7dZdcDtvS8/ltwv5xvjw3V8WudJXQGst1WkxbtGKAw0qXYj0TEhpDcAvCS8lWaYTikXjM13MND+g3CWVGuPjrKqH3JidxxddpfGKASWA2E0MmF7Mq6NRMorZKk7H1qb5D2ND+ukqYIRUNT26xUWzNl9AKC2tPhrFRMyl2OrLWjK9GqO/w9yIkae/2OWTL8iJH8+p1+UZxNin4UIomlaMdtymqtEBDI2xVg5PvE27G43A2PS1ueQ/ZOn2Vo7n8xzMd66jSxpZO17niB4g1QLQoRCOsBlh3IGS7BaWOHwzWv7SlXO5ZDuede2tu9SbxTmDsTUK7Laq0Baz2w+Tazb+9H9Lo8Iv9MNd4pXYvZvtqllUgPdjKouPpn7xK88cU4cJ0je5KyBAvV32aQt5MmSbSrxkSHclHMK8QShhtI1GFFct0X8LsTr8mtPy2JKg17tqWMv2UkBmqGsLmFVN6n9givRJbKEVqnbZq0ljqpLmGcC7rlLujCK+mvu4SHy5uIuShedE5dar30ObpGqFawT9IaMT4n+YA/b0cZ81mIa0JIzSdAY2w9QhCtltphJ7r1mwFmaK1HOi+Mqgb53D6CEKea5OEHothyaD2EnSSyIGSgTlPrOMthNtHvIeOnk10eMRfTzjeaf1X5jqls5ts6aDGlv5xQvq2WS7FoHgqoZ7Q3xCRXOMXOJmbWCQNUXU/lDt+qt73HyS0qOPIMWXna3WE3gePeqepRHwz1ulIeOdkWSHc1GTRfpJQF0941RJGHZ56itR66xjrVAUQVb9UeLX65v4oQu5d1hHyhBmDot2hROyXj1CkOSEnc8QqizatiS1+mHBMGnWE+Qk/W5jUVev0pbQa6aioqXph7qGoSbXo/0GEWWKtSkjtlEe9fOSa5U+CUrtYcLxPjO4i11tifxBh9sZUCSP+dha5xECt00PpzEmEydV4r9sravQLP4gwXNcR8vhXXTjsfbLzhSIdY8Ts1BIJHD3qegwhdYj5qK0iMCJL0UOLIsqxvtj0ze3CzjcLw1d6DGFxxFAmpFnqSUuPjg4ScVdakG6ejyHv5RPTIH8NyblE8hBCP/ctDcKAOwG90lmLWqfL0nWKXEc531+8n2RRDpwfQEjDl0YNIT+jMDIzjvKyG6VQkdoZezm6ihZ5sssIWX6a0LNDuynOfnTC/IzC2N3DpkRclFwbb5afg5zUfEX9HNCMRu5JmJ3m8mNbjXAfBZrG9rb9rrzqjJC6XH52RrH6z3ddMYs8gpRHGexKXd5OVDqDLMRiG4nrsFjaicPspSUdqgBpds9IGCz2OPJRVLLotxJ6x84ll0aYXJQ6Sco7qkpOSF+bXH2++5FDn30swnNvKorzxoTXNWWq15vssmPttDn/oB+tZppFJMNQA5z1Ei7xMpP8z6T3Uod4E+EN39Vv6MoI5bdNZOsiWW+fyj3yVlpGsNtK8m9gFP0JSeb6WY38tok5luPvEn71FyWkTCglCM91XfScpzPerLSq1TIqO7CDugt8h5BuD80v6ZDN/DbplJSciq987Y2KrLJ8GuMEg/1hwcoXh/0gMMPFQb9eb3U28rZfI7hfVNbLCwxJn8as4DLNIbXdMAhGE7fu1MWvV312CH+dB15ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF9ICF91hB59Jnn/IuHTCgnhCwnhCwnh6/kJ/wfeML2Q7lc4SAAAAABJRU5ErkJggg=="
+            width="80" alt="Exxon Mobil Logo">
+        </td>
+        <td>Mobile</td>
+        <td> <a href="https://exorgroup.com" target="_blank">exorgroup.com</a> </td>
+        <td> <a href="mailto:contact@exorgroup.com">contact@exorgroup.com</a></td>
+        <td> <a href="tel:+389843912">+389843912</a></td>
+        <td>150-250</td>
+        <td>Lorem ipsum dolor, sit amet.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
 </html>
