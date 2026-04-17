@@ -1,22 +1,80 @@
+/* Single source of truth */
+:root {
+    --main-margin: 80px;
+    /* --primary-bg-color: #232323; */
+    --primary-bg-color: #eeeeee;
+}
+
 body {
     font-family: "Playfair Display", serif;
     font-weight: 500;
     margin: 0;
+    background-color: var(--primary-bg-color);
 }
 
-.header, .footer {
-    padding: 12px 20px;
+.header,
+.footer {
+    padding: 12px var(--main-margin);
     background-color: rgb(55, 145, 247);
     color: white;
 }
 
-.header a, .footer a {
+/* Descendant selector */
+.header a, 
+.footer a {
     color: white;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.header a:hover, 
+.footer a:hover {
+     color: rgb(212, 212, 212);
+}
+
+.header a:active, 
+.footer a:active {
+    color: rgb(170, 170, 170);
+}
+
+/* .header a:focus, 
+.footer a:focus {
+    color: rgb(185, 16, 16);
+    outline: none;
+    border: 3px solid #ff0000;
+    border-radius: 24px;
+    padding: 4px;
+} */
+
+/* :hover, :active, :focus, :visited, :checked, :disabled */
+
+.container a:visited {
+    color: #3ee015;
+}
+
+/* Child selector */
+.header > a {
+    color: red;
+}
+
+/* Adjacent */
+/* .prv + .vtor {
+    color: green;
+} */
+
+/* General sibling */
+.link ~ p {
+    color: yellow;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: -0.04em;
 }
 
 h1 {
     font-weight: 700;
-    color: rgb(208, 238, 238);
+    color: rgb(255, 255, 255);
     background-color: rgb(55, 145, 247);
     padding: 12px 40px;
     border-radius: 24px;
@@ -62,9 +120,8 @@ p {
     font-weight: bold;
 }
 
-
 .container {
-    margin: 24px;
+    margin: 24px var(--main-margin);
 }
 
 .section {
@@ -75,8 +132,18 @@ p {
     margin-bottom: 12px;
 }
 
+.section p {
+    margin-bottom: 0;
+}
+
 #best-blog {
     background-color: lightgreen;
 }
 
 
+.social-links img:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+}
