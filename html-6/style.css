@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    z-index: 999; 
+    background-color: lightslategray; 
+    width: 100%;
+    top: 0;
+    height: 40px;
+}
+
+.title {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    /* height: 500px; */
+}
+
+.abs-parent {
+    position: relative;
+    width: fit-content;
+
+    border: 1px solid;
+    height: fit-content;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    background-color: lightblue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    /* position: absolute; */
+    /* bottom: 10px; */
+}
+
+.links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.abs-parent:hover .links {
+    /* display: block; */
+    opacity: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.abs-parent button {
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+    /* display: none; */
+}
+
+.abs-parent:hover button {
+    opacity: 100;
+    visibility:visible;
+    /* display: block; */
+}
+
+.sale-sticker {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.abs {
+    position: relative; 
+    border-radius: 999px;
+    background-color: yellow; 
+    width: 150px;
+    height: 150px;
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(234, 242, 245);
+    border-radius: 30px;
+}
+
+.left-eye{
+    top: 30px; left: 30px; 
+}
+
+.right-eye {
+    top: 30px; left: 90px; 
+}
+
+
+.zenith {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 20px;
+    top: 10px;
+    transition: 200ms;
+}
+
+.abs:hover .zenith {
+    top: 10px;
+    left: 10px;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    background-color: lightblue;
+    width: 100%;
+    z-index: 9999;
+    height: 40px;
+}

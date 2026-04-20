@@ -1,6 +1,6 @@
 /* Single source of truth */
 :root {
-    --main-margin: 80px;
+    --main-spacing: 120px;
     /* --primary-bg-color: #232323; */
     --primary-bg-color: #eeeeee;
 }
@@ -14,7 +14,7 @@ body {
 
 .header,
 .footer {
-    padding: 12px var(--main-margin);
+    padding: 12px var(--main-spacing);
     background-color: rgb(55, 145, 247);
     color: white;
 }
@@ -27,7 +27,7 @@ body {
     transition: 300ms;
 }
 
-.header a:hover, 
+.header a:hover,
 .footer a:hover {
      color: rgb(212, 212, 212);
 }
@@ -66,7 +66,6 @@ body {
 .link ~ p {
     color: yellow;
 }
-
 
 h1,h2,h3,h4,h5,h6 {
     letter-spacing: -0.04em;
@@ -110,7 +109,7 @@ p {
 
 .text {
     font-family: 'Anton';
-    background-color: rgb(34, 104, 255);   
+    background-color: rgb(34, 104, 255);
     color: white;
 }
 
@@ -121,7 +120,7 @@ p {
 }
 
 .container {
-    margin: 24px var(--main-margin);
+    margin: 24px var(--main-spacing);
 }
 
 .section {
