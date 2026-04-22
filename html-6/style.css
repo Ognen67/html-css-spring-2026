@@ -1,10 +1,14 @@
+:root {
+    --max-z-index: 9999999999999
+}
+
 body {
     margin: 0;
 }
 
 .header {
     position: fixed;
-    z-index: 999; 
+    z-index: var(--max-z-index); 
     background-color: lightslategray; 
     width: 100%;
     top: 0;
@@ -121,6 +125,8 @@ p {
     top: 0px;
     background-color: lightblue;
     width: 100%;
-    z-index: 9999;
+    z-index: var(--max-z-index);
     height: 40px;
 }
+
+/* static, relative, absolute, fixed, sticky */

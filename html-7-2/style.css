@@ -1,0 +1,135 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 300px;
+    height: fit-content;
+    font-family: "Inter";
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px 0px black;
+    padding: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 15px 5px rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+.card:active {
+    transition: 0.1s ease-in-out;
+    transform: scale(0.95);
+    cursor: pointer;
+    background-color: white;
+}
+
+.card-image img {
+    /* width: 100%; */
+    width: calc(100% - 24px);
+    padding: 12px;
+    border-radius: 24px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.pin {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.pin i {
+    font-size: 24px;
+    color: darkslategray;
+}
+
+.overlay span {
+    border-radius: 12px;
+    /* border: 1px solid rgb(255, 172, 172); */
+    padding: 6px 8px;
+    font-weight: bold;
+}
+
+.pink {
+    border: 1px solid #A692E0;
+    background-color: #F7F1FE;
+    color: #A692E0;
+}
+
+.purple {
+    border: 1px solid #232376;
+    background-color: #D5DFFA;
+    color: #232376;
+}
+
+.green {
+    border: 1px solid #51819E;
+    background-color: #CFF1FD;
+    color: #51819E;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 16px;
+}
+
+.class-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content p,
+.card-content h3 {
+    margin: 0;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 16px;
+}
+
+.reviews-container .reviews,
+.reviews-container .comments {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviews i {
+    color: gold;
+}
+
+.comments i {
+    color: darkslategray;
+    font-size: 14px;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #747474;
+}
+
+.card-footer .entry {
+    display: flex;
+    gap: 8px;
+}
