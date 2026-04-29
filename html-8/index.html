@@ -11,14 +11,17 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
 
 <body>
     <div class="header">
         <div class="header-left">
-            <div class="img-wrapper">
+            <div class="img-wrapper" id="menu-btn">
                 <img src="images/w3schools-logo.png" alt="W3Schools Logo">
             </div>
+            <div class="nav-link menu"><a href="">Menu</a> <i class="fa fa-chevron-down"></i></div>
+
             <div class="nav-link"><a href="">Tutorials</a> <i class="fa fa-chevron-down"></i></div>
             <div class="nav-link"><a href="">References</a> <i class="fa fa-chevron-down"></i></div>
             <div class="nav-link"><a href="">Exercises</a> <i class="fa fa-chevron-down"></i></div>
@@ -41,6 +44,7 @@
         </div>
     </div>
 
+
     <div class="header-courses">
         <a href="">HTML</a>
         <a href="">CSS</a>
@@ -60,6 +64,13 @@
         <a href="">Sql</a>
         <a href="">PYTHON</a>
         <a href="">Java</a>
+    </div>
+
+    <div class="mobile-menu" id="menu">
+        <div class=""><a href="">Tutorials</a> <i class="fa fa-chevron-down"></i></div>
+        <div class=""><a href="">References</a> <i class="fa fa-chevron-down"></i></div>
+        <div class=""><a href="">Exercises</a> <i class="fa fa-chevron-down"></i></div>
+        <div class=""><a href="">Certificates</a> <i class="fa fa-chevron-down"></i></div>
     </div>
 
     <div class="main">
@@ -190,7 +201,7 @@
             <div class="lang-short double-col">
                 C#
             </div>
-            <div class="lang-short double-col">
+            <div class="lang-short ">
                 Node.js
             </div>
             <div class="lang-short">
@@ -312,6 +323,16 @@
         </div>
     </div>
 
+    
+    <script defer>
+        const menuBtn = document.getElementById("menu-btn")
+        const menu = document.getElementById("menu")
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('open')
+            console.log('test');
+        })
+    </script>
 </body>
 
 </html>
@@ -323,3 +344,13 @@
     sledno:
     grid, media queries (transitions, animations)
  -->
+
+ <!-- 
+    Domasno
+
+    Predhodno dodadenite sekcii da se napravat responzivni
+    so koristenje na media queries,
+    https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+    
+  -->
