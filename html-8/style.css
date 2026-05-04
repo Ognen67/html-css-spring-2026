@@ -81,7 +81,6 @@ body {
     color: var(--text-primary);
 }
 
-
 .header-input-wrapper {
     position: relative;
 }
@@ -109,7 +108,6 @@ body {
     background-color: #9F9F9F;
     border-radius: 100px;
 }
-
 
 .header-right {
     display: flex;
@@ -147,10 +145,15 @@ body {
     background-color: white;
     height: 100vh;
     top: 60px;
-    position: relative;
+    display: none;
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    background: white;
 }
 
-.open {
+#menu.open {
     display: block;
 }
 
@@ -345,7 +348,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .language-card {
     background-color: var(--light-green-color);
     border-radius: 12px;
@@ -441,6 +443,48 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+}
+
+.float-btn {
+    animation: float 3s ease-in-out infinite;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.show {
+    animation: show 1s ease 1 150ms forwards;
+    opacity: 0;
+}
+
+.show-later {
+    animation: show 1s ease 1 150ms forwards;
+    animation-delay: 200ms;
+    opacity: 0;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (width < 1512px) {
